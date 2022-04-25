@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-md-12">
+            <div class="header">
+                <div class="col-md-2">
+                    <img src="./img/LOGO.PNG" alt="" srcset="" width="100%">
+                </div>
+                <div class="col-md-10 text-center bg-info">
+                    <h3>BỘ CÔNG THƯƠNG</h3>
+                    <h3>TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP TP. HỒ CHÍ MINH</h3>
+                    <h4>Đổi mới, nâng tầm cao mới- Năng động, hội nhập toàn cầu</h4>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <nav class="navbar-collapse">
+                    <ul class="navbar-nav nav">
+                        <li><a href="#" id="dn">Đăng nhập</a></li>
+                        <li><a href="#" id="myBtn">Đăng ký</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-12">
+                <section class="table-reponsive">
+                    <table class="table table-striped">
+                        <caption>
+                            <h3>DANH SÁCH ĐĂNG KÝ LÀM CĂN CƯỚC SINH VIÊN</h3>
+                            <h3>TRƯỜNG DHCN THÀNH PHỐ HỒ CHÍ MINH</h3>
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Họ tên</th>
+                                <th>SCMND cũ</th>
+                                <th>Quê quán</th>
+                                <th>Email</th>
+                                <th>Điện thoại</th>
+                                <th>Ảnh đại diện</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </section>
+            </div>
+            <div class="col-md-12">
+                <footer style="text-align:center">SVTH: Đỗ Văn Hải_Mã sinh viên:20060261_Lớp:DHKHMT16B</footer>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4>THÔNG TIN CÁ NHÂN</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="form-horizontal">
+                            <div class="form-group">
+                                <label for="txtHT" class="control-label col-md-3">Họ tên:</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" id="txtHT" placeholder="Nhập họ tên">
+                                    <span id="tbHT" class="text-danger">*</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtMa" class="control-label col-md-3">SCMND cũ:</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" id="txtMa" placeholder="Nhập SCMND cũ">
+                                    <span id="tbMa" class="text-danger">*</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtQQ" class="control-label col-md-3">Quê quán:</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" id="txtQQ" placeholder="Nhập tỉnh của bạn">
+                                    <span id="tbQQ" class="text-danger">*</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtEmail" class="control-label col-md-3">Email:</label>
+                                <div class="col-md-9">
+                                    <input type="email" class="form-control" id="txtEmail" placeholder="Nhap email của bạn">
+                                    <span id="tbHT" class="text-danger">*</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtSDT" class="control-label col-md-3">Số điện thoại:</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" id="txtSDT" placeholder="xxxx-xxx-xxx">
+                                    <span id="tbSDT" class="text-danger">*</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtAnh" class="control-label col-md-3">Ảnh đại diện:</label>
+                                <div class="col-md-9">
+                                    <input type="file" class="form-control" id="txtAnh" accept=".jpg, .jpeg, .png">
+                                    <span id="tbFile" class="text-danger">*</span>
+                                </div>
+                            </div>
+                            <button type="button" id="btnSave" class="btn btn-success btn-block">Lưu</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
